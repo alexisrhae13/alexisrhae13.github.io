@@ -1,1 +1,144 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall font settings */
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    text-transform: lowercase; /* Ensure body text is in lowercase */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make sure the content fits in the center vertically */
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: chartreuse;
+    padding: 20px 0;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1200px; /* Center the header and keep a max width */
+}
+
+header h1 {
+    color: cherry red;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-transform: uppercase; /* All caps for header title */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #333;
+    text-transform: lowercase; /* Lowercase for header paragraph */
+}
+
+/* Anchor buttons */
+.anchors {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.anchor-btn {
+    background-color: chartreuse;
+    color: cherry red;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.anchor-btn:hover {
+    background-color: cherry red;
+    color: chartreuse;
+}
+
+/* Main content section */
+main {
+    width: 100%;
+    max-width: 1200px; /* Center the main content and ensure proper width */
+    margin-top: 20px;
+    padding: 0 40px; /* Add space on the sides */
+}
+
+/* Section styles */
+section {
+    margin: 40px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    color: chartreuse;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* All caps for section titles */
+}
+
+section ul {
+    list-style: none;
+    text-align: center;
+}
+
+section ul li {
+    font-size: 1.2em;
+    margin: 10px;
+    text-transform: lowercase; /* Lowercase for list items */
+}
+
+section#gis blockquote {
+    font-style: italic;
+    text-align: center;
+    color: cherry red;
+    margin-top: 20px;
+    text-transform: lowercase; /* Lowercase for blockquote */
+}
+
+/* Buttons and links */
+a {
+    text-decoration: none;
+    color: cherry red;
+    text-transform: lowercase; /* Lowercase for links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#contact a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+}
 
