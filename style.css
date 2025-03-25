@@ -8,18 +8,18 @@
 .deadtomato { color: #121111; }
 .pinktomato { color: #eb4034; }
 
-/* Background container for roads */
+/* Background  roads */
 .road-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1; /* Keep it behind everything */
+    z-index: -1; 
     overflow: hidden;
 }
 
-/* Road lines (initially hidden) */
+/* Road lines */
 .road {
     position: absolute;
     background-color: white;
@@ -27,31 +27,26 @@
     opacity: 0;
 }
 
-/* Vertical roads */
 .road.vert {
     width: 4px;
     height: 100vh;
 }
 
-/* Horizontal roads */
 .road.horiz {
     height: 4px;
     width: 100vw;
 }
 
-/* Road positions */
 .road1 { top: 10%; left: 25%; }
 .road2 { top: 10%; left: 50%; }
 .road3 { top: 10%; left: 75%; }
 .road4 { top: 33%; left: 0; }
 .road5 { top: 66%; left: 0; }
 
-/* Appearing effects */
 .show-roads .road {
     opacity: 1;
 }
 
-/* Slide-in effect */
 .show-roads .road.vert {
     transform: translateY(0);
 }
