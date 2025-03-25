@@ -212,6 +212,24 @@
                 <li> 💻 <a href= "https://www.linkedin.com/in/alexis-sheehan-905723179/">linkedin</a></li>
             </ul>
         </section>
+        <iframe width="600" height="400" src="https://docs.google.com/spreadsheets/d/e/example_chart/pubchart?oid=12345&format=interactive"></iframe>
+        <canvas id="myChart"></canvas>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script>
+              const ctx = document.getElementById('myChart').getContext('2d');
+              const myChart = new Chart(ctx, {
+                  type: 'bar',  // Try 'line' or 'pie' too!
+                  data: {
+                      labels: ['Data A', 'Data B', 'Data C'],
+                      datasets: [{
+                          label: 'Cool Data',
+                          data: [12, 19, 3],
+                          backgroundColor: ['red', 'blue', 'green']
+                      }]
+                  }
+              });
+            </script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
     </main>
 
     <footer>
