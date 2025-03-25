@@ -86,6 +86,59 @@ main {
     padding: 0 40px;
 }
 
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 20px auto;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.timeline-circle {
+  background-color: #A9BF04; /* Chartreuse color */
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  position: absolute;
+  left: -60px;
+}
+
+.timeline-content {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #A9BF04;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.timeline-content strong {
+  color: #A60311; /* Tomato red color */
+}
+
+/* Vertical Line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #A9BF04; /* Chartreuse color */
+  margin-left: 30px;
+}
+
+
 /* Section styles ********/
 section {
     margin: 80px 5px;
@@ -170,7 +223,21 @@ footer {
     section h2 {
         font-size: 1.8em;
     }
+      .timeline {
+    padding-left: 20px;
+    }
+    
+    .timeline-circle {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    }
+    
+    .timeline-content {
+    padding: 10px;
+    }
 }
+
 
 /* Shimmer effect on text *******************/
 @keyframes shimmer {
