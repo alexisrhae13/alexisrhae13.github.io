@@ -17,7 +17,7 @@ body {
     color: .readytomato;
     line-height: 1.6;
     padding: 20px;
-    text-transform: lowercase; 
+    text-transform: none; 
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -44,7 +44,7 @@ header h1 {
 header p {
     font-size: 1.2em;
     color: .readytomato;
-    text-transform: lowercase; 
+    text-transform: none; 
 }
 
 /* Anchor buttons ********************/
@@ -111,7 +111,7 @@ section ul {
 section ul li {
     font-size: 1.2em;
     margin: 10px;
-    text-transform: lowercase; 
+    text-transform: none; 
 }
 
 section#gis blockquote {
@@ -119,14 +119,14 @@ section#gis blockquote {
     text-align: center;
     color: .pinktomato;
     margin-top: 20px;
-    text-transform: lowercase; 
+    text-transform: none; 
 }
 
 /* Buttons and links ********************************************/
 a {
     text-decoration: none;
     color: .greentomato;
-    text-transform: lowercase; 
+    text-transform: none; 
 }
 
 a:hover {
