@@ -40,6 +40,50 @@
             <p>I am a Geospatial Data Wrangler and Visualizer.</p>
             <p>I have a passion for showing comprehensive concepts in simplistic forms.</p>
             <button class="bouncybutton">View my Map Gallery</button>
+        <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        #map {
+            width: 400px;  /* Small square size */
+            height: 400px;
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Initialize map centered on Kentucky
+        var map = L.map('map').setView([37.8, -85.0], 8);
+
+        // Add OpenStreetMap basemap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Custom marker icons
+        var homeIcon = L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/32/25/25694.png', iconSize: [32, 32] });
+        var workIcon = L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/32/684/684809.png', iconSize: [32, 32] });
+        var heartIcon = L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/32/833/833472.png', iconSize: [28, 28] });
+        var shopIcon = L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/32/1170/1170678.png', iconSize: [30, 30] });
+
+        // Add markers
+        L.marker([37.6456, -84.7722], { icon: homeIcon }).addTo(map); // Home - Danville
+        L.marker([38.2009, -84.8733], { icon: workIcon }).addTo(map); // Work - Frankfort
+        L.marker([38.2527, -85.7585], { icon: heartIcon }).addTo(map); // Heart - Louisville
+        L.marker([37.7629, -84.8452], { icon: heartIcon }).addTo(map); // Heart - Harrodsburg
+        L.marker([38.0406, -84.5037], { icon: shopIcon }).addTo(map); // Shopping - Lexington
+
+    </script>
+
+</body>
+        
         </section>
             
         <section id="experience">
