@@ -348,3 +348,37 @@ h1:hover, p:hover, ul li:hover, table:hover, th:hover, td:hover, tr:hover, timli
         opacity: 0.8;
     }
 }
+
+/* General style for the weed (🌱) */
+.weed {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style for the mailbox (📫) */
+.mailbox {
+    display: inline-block;
+    cursor: pointer;
+    position: relative; /* Allow position relative to children */
+}
+
+/* Animation when hovering over the mailbox */
+.mailbox:hover ~ .weed {
+    animation: weed-animation 1s ease forwards; /* Apply animation to siblings */
+}
+
+/* Keyframe animation for the weed stretching, popping, and disappearing */
+@keyframes weed-animation {
+    0% {
+        transform: scale(1) translateY(0); /* Normal position */
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        transform: scale(1.5) translateY(-10px); /* Stretching and rising */
+        opacity: 0.8; /* Slight fade */
+    }
+    100% {
+        transform: scale(0.5) translateY(20px); /* Shrinking and popping out */
+        opacity: 0; /* Disappear */
+    }
+}
