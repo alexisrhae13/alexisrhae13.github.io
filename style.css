@@ -91,7 +91,7 @@ main {
 
 /* Section styles ********/
 section {
-    margin: 40px 0;
+    margin: 80px 5px;
     text-align: center;
 }
 
@@ -99,7 +99,7 @@ section h2 {
     font-size: 2em;
     color: .chartreause;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     text-transform: uppercase; 
 }
 
