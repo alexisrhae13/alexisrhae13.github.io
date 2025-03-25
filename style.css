@@ -54,7 +54,8 @@ header p {
     padding: 10px;
     margin: 5px 0;
     text-transform: uppercase;
-    border-radius: 5px;
+     cursor: pointer;
+    border-radius: 200px;
     font-size: 1em;
     font-weight: 600;
     text-align: center;
