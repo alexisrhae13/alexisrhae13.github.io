@@ -149,25 +149,25 @@ table {
 }
 
 table th, table td {
-    border: 1px solid #A60311; /* Set border color */
+    border: 1px solid #A60311; 
     padding: 8px;
     text-align: left;
 }
 
 table th {
-    background-color: #121111; /* Top row background color */
-    color: white; /* Text color for top row */
+    background-color: #121111; 
+    color: white; 
     font-weight: bold;
-    font-size: 0.9em; /* Smaller text size */
+    font-size: 0.9em; 
 }
 
 table tbody tr {
-    background-color: #6E8C03; /* Row color */
-    color: white; /* Text color for remaining rows */
+    background-color: #fff; 
+    color: #A60311; 
 }
 
 table tbody tr td {
-    font-style: italic; /* Italicize text in remaining rows */
+    font-style: italic; /
 }
 
 
