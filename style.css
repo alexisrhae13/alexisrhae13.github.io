@@ -134,7 +134,7 @@ a:hover {
     animation: bounce 1s;
   }
 
-bouncebutton {
+button {
     padding: 1rem 3rem;
     margin-top: 2rem;
     border: none;
@@ -145,7 +145,7 @@ bouncebutton {
     transition: all 150ms ease-in-out;
 }
 
-bouncebutton:hover {
+button:hover {
     background-color: #3d3c61cf;
     color: #ffffff;
     -webkit-transform: scale(1.2);
