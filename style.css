@@ -183,6 +183,11 @@ table tbody tr td {
     height: 400px;
     border: 2px solid #333;
 }
+/* emoji markers */
+.emoji-icon {
+    font-size: 24px; 
+    text-align: center;
+}
 
 /* Section styles ********/
 section {
