@@ -50,11 +50,34 @@
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors'
         }).addTo(map);
-        // icons
-        var homeIcon = L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/32/25/25694.png', iconSize: [32, 32] });
-        var workIcon = L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/32/684/684809.png', iconSize: [32, 32] });
-        var heartIcon = L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/32/833/833472.png', iconSize: [28, 28] });
-        var shopIcon = L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/32/1170/1170678.png', iconSize: [30, 30] });
+        // Define custom emoji icons
+var homeIcon = L.divIcon({
+    className: 'emoji-icon',
+    html: '🏠', 
+    iconSize: [30, 30], 
+    iconAnchor: [15, 15] 
+});
+
+var workIcon = L.divIcon({
+    className: 'emoji-icon',
+    html: '💼', 
+    iconSize: [30, 30],
+    iconAnchor: [15, 15]
+});
+
+var heartIcon = L.divIcon({
+    className: 'emoji-icon',
+    html: '❤️', 
+    iconSize: [30, 30],
+    iconAnchor: [15, 15]
+});
+
+var shoppingIcon = L.divIcon({
+    className: 'emoji-icon',
+    html: '🛍️', 
+    iconSize: [30, 30],
+    iconAnchor: [15, 15]
+});
         // poi
         L.marker([37.6456, -84.7722], { icon: homeIcon }).addTo(map); // Home - Danville
         L.marker([38.2009, -84.8733], { icon: workIcon }).addTo(map); // Work - Frankfort
