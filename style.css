@@ -81,6 +81,7 @@ main {
 /* Section styles ********/
 section {
     margin: 40px 0;
+    text-align: center;
 }
 
 section h2 {
