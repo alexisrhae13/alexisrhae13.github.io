@@ -443,7 +443,7 @@ h1:hover, p:hover, ul li:hover, table:hover, th:hover, td:hover, tr:hover, timli
         transform: scale(1) translateY(0);
     }
     25% {
-        transform: scale(1.2) translateY(-10px);
+        transform: scale(1.2) translateY(-30px);
     }
     50% {
         transform: scale(1) translateY(0);
@@ -495,7 +495,7 @@ h1:hover, p:hover, ul li:hover, table:hover, th:hover, td:hover, tr:hover, timli
     animation: typing 3s steps(40) 1s forwards;
 }
 
-/* Basic styles for positioning */
+/* Container for the coffee cup */
 .coffee-container {
   position: relative;
   display: flex;
@@ -505,69 +505,33 @@ h1:hover, p:hover, ul li:hover, table:hover, th:hover, td:hover, tr:hover, timli
 }
 
 .coffee-cup {
-  width: 50px;
-  height: 40px;
-  border-radius: 25px 25px 5px 5px;
-  background-color: #c98b5c;
-  position: relative;
-  overflow: hidden;
-}
-
-.coffee {
-  width: 100%;
-  height: 100%;
-  background-color: #3e2723;
-  position: absolute;
-  top: -100%;
-  transition: top 0.5s ease-in-out;
-  border-radius: 0 0 25px 25px;
-}
-
-/* The mug at the bottom */
-.coffee-mug {
-  width: 70px;
-  height: 30px;
-  background-color: #8d6e63;
-  border-radius: 10px 10px 5px 5px;
-  margin-top: 40px;
-  position: relative;
-  overflow: hidden;
+  font-size: 100px;  /* Size of the coffee cup emoji */
+  transition: transform 0.3s ease, transform-origin 0.3s ease; /* Smooth tilt */
 }
 
 /* Steam rising effect */
 .steam {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background-color: #e0e0e0;
   border-radius: 50%;
   opacity: 0;
-  top: 5px;
+  top: 40px;
   animation: steam-animation 3s infinite ease-in-out;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/* Pouring effect on hover */
-.coffee-cup:hover .coffee {
-  top: 0;
-  animation: pour-animation 0.5s ease-in-out forwards; /* Adds the pouring animation */
+/* Tilt and steam effect on hover */
+.coffee-cup:hover {
+  transform: rotate(45deg); /* Tilting the cup */
+  transform-origin: bottom center; /* Pivoting from the bottom center of the cup */
 }
 
 .coffee-cup:hover .steam {
-  opacity: 1;
-  animation: steam-animation 3s infinite ease-in-out; /* Activates steam on hover */
-}
-
-/* Pouring animation */
-@keyframes pour-animation {
-  0% {
-    top: -100%;
-  }
-  50% {
-    top: 0;
-  }
-  100% {
-    top: 0; /* Keeps the coffee at the bottom of the cup */
-  }
+  opacity: 1; /* Steam becomes visible on hover */
+  animation: steam-animation 3s infinite ease-in-out; /* Steam rises with animation */
 }
 
 /* Steam animation */
