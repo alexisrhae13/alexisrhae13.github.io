@@ -6,15 +6,15 @@
 .chartreause { color: #A9BF04; }
 .bkg { color:#fffceb; }
 .deadtomato { color: #121111; }
-.pinktomato { color: #eb4034: }
+.pinktomato { color: #eb4034; }
 
 /* Body *******************/
 body {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
     font-style: normal;
-    background-color: #ffeceb;
-    color: #121111;
+    background-color: .bkg;
+    color: .readytomato;
     line-height: 1.6;
     padding: 20px;
     text-transform: lowercase; 
@@ -27,7 +27,7 @@ body {
 /* Header ********************/
 header {
     text-align: center;
-    background-color: #A9BF04;
+    background-color: .chartreause;
     padding: 20px 0;
     border-radius: 8px;
     width: 100%;
@@ -35,7 +35,7 @@ header {
 }
 
 header h1 {
-    color: #eb4034;
+    color: .pinktomato;
     font-size: 3em;
     margin-bottom: 10px;
     text-transform: uppercase; 
@@ -43,7 +43,7 @@ header h1 {
 
 header p {
     font-size: 1.2em;
-    color: #121111;
+    color: .readytomato;
     text-transform: lowercase; 
 }
 
@@ -58,13 +58,13 @@ header p {
 
 .anchor-btn {
     padding: 1rem 3rem;
-    background-color: #A9BF04;
-    color: #eb4034;
+    background-color: .chartreause;
+    color: .pinktomato;
     text-decoration: none;
     padding: 10px;
     margin: 5px 0;
     text-transform: uppercase;
-     cursor: pointer;
+    cursor: pointer;
     border-radius: 200px;
     font-size: 1em;
     font-weight: 600;
@@ -73,15 +73,15 @@ header p {
 }
 
 .anchor-btn:hover {
-    background-color: #eb4034;
-    color: #A9BF04;
+    background-color: .pinktomato;
+    color: .chartreause;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
-    box-shadow: 0 0 10px 4px #121111;
+    box-shadow: 0 0 10px 4px .readytomato;
 }
 
-/* Content stuff*************/
+/* Content stuff ************/
 main {
     width: 100%;
     max-width: 1200px; 
@@ -97,7 +97,7 @@ section {
 
 section h2 {
     font-size: 2em;
-    color: #A9BF04;
+    color: .chartreause;
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase; 
@@ -117,7 +117,7 @@ section ul li {
 section#gis blockquote {
     font-style: italic;
     text-align: center;
-    color: #eb4034;
+    color: .pinktomato;
     margin-top: 20px;
     text-transform: lowercase; 
 }
@@ -125,7 +125,7 @@ section#gis blockquote {
 /* Buttons and links ********************************************/
 a {
     text-decoration: none;
-    color: #6E8C03;
+    color: .greentomato;
     text-transform: lowercase; 
 }
 
@@ -138,31 +138,29 @@ a:hover {
     margin-top: 10px;
 }
 
-.bouncy {
-  }
+.bouncy {}
 
 .bouncy:hover {
     animation: bounce 1s;
-  }
-
+}
 
 .bouncybutton {
     padding: 1rem 3rem;
     margin-top: 2rem;
     border: none;
-    color: #121111;
-    background: #eb4034;
+    color: .readytomato;
+    background: .pinktomato;
     cursor: pointer;
     border-radius: 200px;
     transition: all 150ms ease-in-out;
 }
 
 .bouncybutton:hover {
-    background-color: #121111;
+    background-color: .readytomato;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
-    box-shadow: 0 0 10px 4px #121111;
+    box-shadow: 0 0 10px 4px .readytomato;
 }
 
 /* Footer **************************/
@@ -184,17 +182,17 @@ footer {
 
 @keyframes bounce {
     0%, 20%, 60%, 100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
-  
+
     40% {
-      -webkit-transform: translateY(-20px);
-      transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
     }
-  
+
     80% {
-      -webkit-transform: translateY(-10px);
-      transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
     }
-  }
+}
