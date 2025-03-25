@@ -617,3 +617,35 @@ h1:hover, p:hover, ul li:hover, table:hover, th:hover, td:hover, tr:hover, timli
 .anchor-btn:hover {
   background-color: #A60311;
 }
+
+#scale-bar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100%;
+  max-width: 200px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #A60311;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.scale-mark {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  color: #A60311;
+}
+
+#scale-indicator {
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #121111;
+  transition: left 0.2s ease;
+}
