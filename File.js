@@ -11,3 +11,30 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+document.querySelector("#about-btn").addEventListener("click", function() {
+    document.querySelector("#needle-north").style.transform = "rotate(0deg)";
+    document.querySelector("#needle-east").style.transform = "rotate(90deg)";
+    document.querySelector("#needle-south").style.transform = "rotate(180deg)";
+    document.querySelector("#needle-west").style.transform = "rotate(270deg)";
+});
+
+document.querySelector("#gis-btn").addEventListener("click", function() {
+    document.querySelector("#needle-north").style.transform = "rotate(0deg)";
+    document.querySelector("#needle-east").style.transform = "rotate(90deg)";
+    document.querySelector("#needle-south").style.transform = "rotate(180deg)";
+    document.querySelector("#needle-west").style.transform = "rotate(270deg)";
+});
+
+document.querySelector("#experience-btn").addEventListener("click", function() {
+    document.querySelector("#needle-north").style.transform = "rotate(180deg)";
+    document.querySelector("#needle-east").style.transform = "rotate(270deg)";
+    document.querySelector("#needle-south").style.transform = "rotate(0deg)";
+    document.querySelector("#needle-west").style.transform = "rotate(90deg)";
+});
+
+document.querySelector("#contact-btn").addEventListener("click", function() {
+    document.querySelector("#needle-north").style.transform = "rotate(90deg)";
+    document.querySelector("#needle-east").style.transform = "rotate(0deg)";
+    document.querySelector("#needle-south").style.transform = "rotate(270deg)";
+    document.querySelector("#needle-west").style.transform = "rotate(180deg)";
+});
