@@ -177,7 +177,12 @@ table tbody tr td {
     font-style: italic; /
 }
 
-
+/* map *********************/
+#map {
+    width: 400px;  /* Small square size */
+    height: 400px;
+    border: 2px solid #333;
+}
 
 /* Section styles ********/
 section {
