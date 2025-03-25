@@ -382,3 +382,61 @@ h1:hover, p:hover, ul li:hover, table:hover, th:hover, td:hover, tr:hover, timli
         opacity: 0; /* Disappear */
     }
 }
+
+/* Pin animation for location */
+@keyframes pin-bounce {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    25% {
+        transform: scale(1.2) translateY(-10px);
+    }
+    50% {
+        transform: scale(1) translateY(0);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+.about-location:hover {
+    animation: pin-bounce 0.5s ease forwards;
+}
+
+/* Heart animation for family */
+@keyframes heart-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.about-family:hover {
+    animation: heart-pulse 1s ease infinite;
+}
+
+/* Typing animation for job */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.about-job {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid;
+    animation: typing 3s steps(40) 1s forwards;
+}
