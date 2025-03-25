@@ -4,7 +4,7 @@
 .readytomato { color: #121111; }
 .greentomato { color: #6E8C03; }
 .chartreause { color: #A9BF04; }
-.bkg { color: #fffceb; }
+.bkg { background-color: #fffceb; } /* Ensure correct background color */
 .deadtomato { color: #121111; }
 .pinktomato { color: #eb4034; }
 
@@ -13,38 +13,38 @@ body {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
     font-style: normal;
-    background-color: .bkg;
-    color: .readytomato;
+    background-color: #fffceb; /* Ensure the background is set correctly */
+    color: #121111; /* Set a default text color */
     line-height: 1.6;
     padding: 20px;
-    text-transform: none; 
+    text-transform: none;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     flex-direction: column;
 }
 
 /* Header ********************/
 header {
     text-align: center;
-    background-color: .chartreause;
+    background-color: #A9BF04; /* Proper chartreuse color */
     padding: 20px 0;
     border-radius: 8px;
     width: 100%;
-    max-width: 1200px; 
+    max-width: 1200px;
 }
 
 header h1 {
-    color: .pinktomato;
+    color: #eb4034; /* Proper pinktomato color */
     font-size: 3em;
     margin-bottom: 10px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 header p {
     font-size: 1.2em;
-    color: .readytomato;
-    text-transform: none; 
+    color: #121111; /* Ready tomato color */
+    text-transform: none;
 }
 
 /* Anchor buttons ********************/
@@ -58,10 +58,9 @@ header p {
 
 .anchor-btn {
     padding: 1rem 3rem;
-    background-color: .chartreause;
-    color: .pinktomato;
+    background-color: #A9BF04; /* Chartreuse background for buttons */
+    color: #eb4034; /* Pinktomato text color */
     text-decoration: none;
-    padding: 10px;
     margin: 5px 0;
     text-transform: uppercase;
     cursor: pointer;
@@ -73,20 +72,18 @@ header p {
 }
 
 .anchor-btn:hover {
-    background-color: .pinktomato;
-    color: .chartreause;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
+    background-color: #eb4034; /* Pinktomato on hover */
+    color: #A9BF04; /* Chartreuse text on hover */
     transform: scale(1.2);
-    box-shadow: 0 0 10px 4px .readytomato;
+    box-shadow: 0 0 10px 4px #121111; /* Ready tomato for shadow */
 }
 
-/* Content stuff ************/
+/* Content styles ************/
 main {
     width: 100%;
-    max-width: 1200px; 
+    max-width: 1200px;
     margin-top: 20px;
-    padding: 0 40px; 
+    padding: 0 40px;
 }
 
 /* Section styles ********/
@@ -97,10 +94,9 @@ section {
 
 section h2 {
     font-size: 2em;
-    color: .chartreause;
-    text-align: center;
+    color: #A9BF04; /* Chartreuse */
     margin-bottom: 20px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 section ul {
@@ -111,22 +107,22 @@ section ul {
 section ul li {
     font-size: 1.2em;
     margin: 10px;
-    text-transform: none; 
+    text-transform: none;
 }
 
 section#gis blockquote {
     font-style: italic;
     text-align: center;
-    color: .pinktomato;
+    color: #eb4034; /* Pinktomato for blockquote */
     margin-top: 20px;
-    text-transform: none; 
+    text-transform: none;
 }
 
 /* Buttons and links ********************************************/
 a {
     text-decoration: none;
-    color: .greentomato;
-    text-transform: none; 
+    color: #6E8C03; /* Greentomato */
+    text-transform: none;
 }
 
 a:hover {
@@ -140,10 +136,9 @@ a:hover {
 
 .bouncybutton {
     padding: 1rem 3rem;
-    background-color: .chartreause;
-    color: .pinktomato;
+    background-color: #A9BF04; /* Chartreuse */
+    color: #eb4034; /* Pinktomato */
     text-decoration: none;
-    padding: 10px;
     margin: 5px 0;
     text-transform: uppercase;
     cursor: pointer;
@@ -155,12 +150,10 @@ a:hover {
 }
 
 .bouncybutton:hover {
-    background-color: .pinktomato;
-    color: .chartreause;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
+    background-color: #eb4034; /* Pinktomato */
+    color: #A9BF04; /* Chartreuse */
     transform: scale(1.2);
-    box-shadow: 0 0 10px 4px .readytomato;
+    box-shadow: 0 0 10px 4px #121111; /* Ready tomato for shadow */
 }
 
 /* Footer **************************/
@@ -172,23 +165,14 @@ footer {
 /* Responsive design ***************************/
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2.5em;}
+        font-size: 2.5em;
+    }
     section h2 {
-        font-size: 1.8em;}
+        font-size: 1.8em;
+    }
 }
 
-@keyframes bounce {
-    0%, 20%, 60%, 100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);}
-    40% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);}
-    80% {
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);}
-}
-
+/* Shimmer effect on text *******************/
 @keyframes shimmer {
     0% {
         text-shadow: 2px 2px 5px rgba(255, 87, 51, 0.5), -2px -2px 5px rgba(255, 87, 51, 0.5);
