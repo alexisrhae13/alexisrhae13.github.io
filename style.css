@@ -1,7 +1,7 @@
 /* Body *******************/
 body {
     font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
     background-color: #ffeceb;
     color: #121111;
@@ -56,6 +56,7 @@ header p {
     text-transform: uppercase;
     border-radius: 5px;
     font-size: 1em;
+    font-weight: 600;
     text-align: center;
     transition: all 150ms ease-in-out;
 }
