@@ -320,3 +320,27 @@ h1:hover, p:hover, ul li:hover, table:hover, th:hover, td:hover, tr:hover, timli
     color: #ff5733;
     animation: shimmer 1.5s infinite ease-in-out; 
 }
+
+.shining-star {
+    display: inline-block;
+    font-size: 1.5rem;  /* Adjust star size */
+    animation: pulse-shine 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes pulse-shine {
+    0% { 
+        transform: scale(1);
+        text-shadow: 0 0 2px rgba(255, 255, 100, 0.5);
+        opacity: 0.8;
+    }
+    50% { 
+        transform: scale(1.2); /* Slightly bigger */
+        text-shadow: 0 0 8px rgba(255, 255, 150, 1); /* Glow effect */
+        opacity: 1;
+    }
+    100% { 
+        transform: scale(1);
+        text-shadow: 0 0 2px rgba(255, 255, 100, 0.5);
+        opacity: 0.8;
+    }
+}
