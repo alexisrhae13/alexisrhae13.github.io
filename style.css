@@ -4,7 +4,7 @@
 .readytomato { color: #121111; }
 .greentomato { color: #6E8C03; }
 .chartreause { color: #A9BF04; }
-.bkg { background-color: #fffceb; } /* Ensure correct background color */
+.bkg { background-color: #fffceb; }
 .deadtomato { color: #121111; }
 .pinktomato { color: #eb4034; }
 
@@ -13,8 +13,8 @@ body {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
     font-style: normal;
-    background-color: #fffceb; /* Ensure the background is set correctly */
-    color: #121111; /* Set a default text color */
+    background-color: #fffceb; 
+    color: #121111; 
     line-height: 1.6;
     padding: 20px;
     text-transform: none;
@@ -27,7 +27,7 @@ body {
 /* Header ********************/
 header {
     text-align: center;
-    background-color: #A9BF04; /* Proper chartreuse color */
+    background-color: #A9BF04;
     padding: 20px 0;
     border-radius: 8px;
     width: 100%;
@@ -35,7 +35,7 @@ header {
 }
 
 header h1 {
-    color: #eb4034; /* Proper pinktomato color */
+    color: #eb4034; 
     font-size: 3em;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -43,7 +43,7 @@ header h1 {
 
 header p {
     font-size: 1.2em;
-    color: #121111; /* Ready tomato color */
+    color: #121111; 
     text-transform: none;
 }
 
@@ -58,8 +58,8 @@ header p {
 
 .anchor-btn {
     padding: 1rem 3rem;
-    background-color: #A9BF04; /* Chartreuse background for buttons */
-    color: #eb4034; /* Pinktomato text color */
+    background-color: #A9BF04; 
+    color: #eb4034;
     text-decoration: none;
     margin: 5px 0;
     text-transform: uppercase;
@@ -72,10 +72,10 @@ header p {
 }
 
 .anchor-btn:hover {
-    background-color: #eb4034; /* Pinktomato on hover */
-    color: #A9BF04; /* Chartreuse text on hover */
+    background-color: #eb4034; 
+    color: #A9BF04; 
     transform: scale(1.2);
-    box-shadow: 0 0 10px 4px #121111; /* Ready tomato for shadow */
+    box-shadow: 0 0 10px 4px #121111; 
 }
 
 /* Content styles ************/
@@ -94,7 +94,7 @@ section {
 
 section h2 {
     font-size: 2em;
-    color: #A9BF04; /* Chartreuse */
+    color: #A9BF04; /
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -113,7 +113,7 @@ section ul li {
 section#gis blockquote {
     font-style: italic;
     text-align: center;
-    color: #eb4034; /* Pinktomato for blockquote */
+    color: #eb4034;
     margin-top: 20px;
     text-transform: none;
 }
@@ -121,7 +121,7 @@ section#gis blockquote {
 /* Buttons and links ********************************************/
 a {
     text-decoration: none;
-    color: #6E8C03; /* Greentomato */
+    color: #6E8C03; /
     text-transform: none;
 }
 
@@ -136,8 +136,8 @@ a:hover {
 
 .bouncybutton {
     padding: 1rem 3rem;
-    background-color: #A9BF04; /* Chartreuse */
-    color: #eb4034; /* Pinktomato */
+    background-color: #A9BF04; /
+    color: #eb4034; 
     text-decoration: none;
     margin: 5px 0;
     text-transform: uppercase;
@@ -150,10 +150,10 @@ a:hover {
 }
 
 .bouncybutton:hover {
-    background-color: #eb4034; /* Pinktomato */
-    color: #A9BF04; /* Chartreuse */
+    background-color: #eb4034; 
+    color: #A9BF04;
     transform: scale(1.2);
-    box-shadow: 0 0 10px 4px #121111; /* Ready tomato for shadow */
+    box-shadow: 0 0 10px 4px #121111; 
 }
 
 /* Footer **************************/
@@ -191,5 +191,5 @@ h1, p, ul li {
 
 h1:hover, p:hover, ul li:hover {
     color: #ff5733;
-    animation: shimmer 1.5s infinite ease-in-out; /* Apply shimmer effect directly to text */
+    animation: shimmer 1.5s infinite ease-in-out; 
 }
