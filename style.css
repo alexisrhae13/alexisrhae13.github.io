@@ -1,49 +1,49 @@
-/* Basic reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and overall font settings */
+/* Body *******************/
 body {
     font-family: "Courier New", Courier, monospace;
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
     padding: 20px;
-    text-transform: lowercase; /* Ensure body text is in lowercase */
+    text-transform: lowercase; 
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Make sure the content fits in the center vertically */
+    height: 100vh; 
     flex-direction: column;
 }
 
-/* Header */
+/* Header ********************/
 header {
     text-align: center;
-    background-color: chartreuse;
+    background-color: #8bff85;
     padding: 20px 0;
     border-radius: 8px;
     width: 100%;
-    max-width: 1200px; /* Center the header and keep a max width */
+    max-width: 1200px; 
 }
 
 header h1 {
-    color: cherry red;
+    color: #eb4034;
     font-size: 3em;
     margin-bottom: 10px;
-    text-transform: uppercase; /* All caps for header title */
+    text-transform: uppercase; 
 }
 
 header p {
     font-size: 1.2em;
     color: #333;
-    text-transform: lowercase; /* Lowercase for header paragraph */
+    text-transform: lowercase; 
 }
 
-/* Anchor buttons */
+/* Anchor buttons ********************/
 .anchors {
     position: fixed;
     top: 20px;
@@ -53,8 +53,9 @@ header p {
 }
 
 .anchor-btn {
-    background-color: chartreuse;
-    color: cherry red;
+    padding: 1rem 3rem;
+    background-color: #8bff85;
+    color: #eb4034;
     text-decoration: none;
     padding: 10px;
     margin: 5px 0;
@@ -62,32 +63,37 @@ header p {
     border-radius: 5px;
     font-size: 1em;
     text-align: center;
+    transition: all 150ms ease-in-out;
 }
 
 .anchor-btn:hover {
-    background-color: cherry red;
-    color: chartreuse;
+    background-color: #eb4034;
+    color: #8bff85;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: 0 0 10px 4px #322e3fba;
 }
 
-/* Main content section */
+/* Content stuff*************/
 main {
     width: 100%;
-    max-width: 1200px; /* Center the main content and ensure proper width */
+    max-width: 1200px; 
     margin-top: 20px;
-    padding: 0 40px; /* Add space on the sides */
+    padding: 0 40px; 
 }
 
-/* Section styles */
+/* Section styles ********/
 section {
     margin: 40px 0;
 }
 
 section h2 {
     font-size: 2em;
-    color: chartreuse;
+    color: #8bff85;
     text-align: center;
     margin-bottom: 20px;
-    text-transform: uppercase; /* All caps for section titles */
+    text-transform: uppercase; 
 }
 
 section ul {
@@ -98,22 +104,22 @@ section ul {
 section ul li {
     font-size: 1.2em;
     margin: 10px;
-    text-transform: lowercase; /* Lowercase for list items */
+    text-transform: lowercase; 
 }
 
 section#gis blockquote {
     font-style: italic;
     text-align: center;
-    color: cherry red;
+    color: #eb4034;
     margin-top: 20px;
-    text-transform: lowercase; /* Lowercase for blockquote */
+    text-transform: lowercase; 
 }
 
-/* Buttons and links */
+/* Buttons and links ********************************************/
 a {
     text-decoration: none;
-    color: cherry red;
-    text-transform: lowercase; /* Lowercase for links */
+    color: #eb4034;
+    text-transform: lowercase; 
 }
 
 a:hover {
@@ -125,13 +131,40 @@ a:hover {
     margin-top: 10px;
 }
 
-/* Footer */
+.bouncy {
+  }
+
+.bouncy:hover {
+    animation: bounce 1s;
+  }
+
+bouncebutton {
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    border: none;
+    color: rgb(255, 255, 255);
+    background: #181a4b;
+    cursor: pointer;
+    border-radius: 200px;
+    transition: all 150ms ease-in-out;
+}
+
+bouncebutton:hover {
+    background-color: #3d3c61cf;
+    color: #ffffff;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: 0 0 10px 4px #322e3fba;
+}
+
+/* Footer **************************/
 footer {
     margin-top: 40px;
     text-align: center;
 }
 
-/* Responsive design */
+/* Responsive design ***************************/
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5em;
@@ -142,3 +175,19 @@ footer {
     }
 }
 
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
