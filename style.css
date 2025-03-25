@@ -181,7 +181,6 @@ table tbody tr td {
 #map {
     width: 400px;  /* Small square size */
     height: 400px;
-    border: 2px solid #333;
 }
 /* emoji markers */
 .emoji-icon {
