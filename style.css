@@ -146,17 +146,23 @@ a:hover {
 
 .bouncybutton {
     padding: 1rem 3rem;
-    margin-top: 2rem;
-    border: none;
-    color: .readytomato;
-    background: .pinktomato;
+    background-color: .chartreause;
+    color: .pinktomato;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    text-transform: uppercase;
     cursor: pointer;
     border-radius: 200px;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
     transition: all 150ms ease-in-out;
 }
 
 .bouncybutton:hover {
-    background-color: .readytomato;
+    background-color: .pinktomato;
+    color: .chartreause;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
