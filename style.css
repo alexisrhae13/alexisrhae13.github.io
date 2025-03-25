@@ -601,23 +601,6 @@ h1:hover, p:hover, ul li:hover, table:hover, th:hover, td:hover, tr:hover, timli
   transform: rotate(270deg);
 }
 
-/* Anchors (for styling and to target with JavaScript later) */
-.anchor-btn {
-  display: inline-block;
-  padding: 10px;
-  margin: 10px;
-  background-color: #A9BF04;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-/* Hover effect for anchors */
-.anchor-btn:hover {
-  background-color: #A60311;
-}
-
 #scale-bar {
   position: fixed;
   bottom: 20px;
