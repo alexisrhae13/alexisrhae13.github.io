@@ -191,9 +191,14 @@ footer {
 
 @keyframes shimmer {
     0% {
-        background-position: -200%; }
+        text-shadow: 2px 2px 5px rgba(255, 87, 51, 0.5), -2px -2px 5px rgba(255, 87, 51, 0.5);
+    }
+    50% {
+        text-shadow: 2px 2px 5px rgba(255, 173, 51, 0.5), -2px -2px 5px rgba(255, 173, 51, 0.5);
+    }
     100% {
-        background-position: 200%; }
+        text-shadow: 2px 2px 5px rgba(255, 87, 51, 0.5), -2px -2px 5px rgba(255, 87, 51, 0.5);
+    }
 }
 
 h1, p, ul li {
@@ -201,8 +206,6 @@ h1, p, ul li {
 }
 
 h1:hover, p:hover, ul li:hover {
-    color: #ff5733; 
-    background: linear-gradient(90deg, rgba(255, 87, 51, 0.5) 25%, rgba(255, 173, 51, 0.5) 50%, rgba(255, 87, 51, 0.5) 75%);
-    background-size: 200% 100%;
-    animation: shimmer 1.5s infinite linear;
+    color: #ff5733;
+    animation: shimmer 1.5s infinite ease-in-out; /* Apply shimmer effect directly to text */
 }
