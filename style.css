@@ -4,7 +4,7 @@
 .readytomato { color: #121111; }
 .greentomato { color: #6E8C03; }
 .chartreause { color: #A9BF04; }
-.bkg { color:#fffceb; }
+.bkg { color: #fffceb; }
 .deadtomato { color: #121111; }
 .pinktomato { color: #eb4034; }
 
@@ -136,12 +136,6 @@ a:hover {
 #contact a {
     display: inline-block;
     margin-top: 10px;
-}
-
-.bouncy {}
-
-.bouncy:hover {
-    animation: bounce 1s;
 }
 
 .bouncybutton {
