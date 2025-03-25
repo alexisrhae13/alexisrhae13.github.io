@@ -293,11 +293,11 @@ footer {
     }
 }
 
-h1, p, ul li {
+h1, p, ul li , table, th, td, tr, timline-content{
     transition: color 0.3s ease;
 }
 
-h1:hover, p:hover, ul li:hover {
+h1:hover, p:hover, ul li:hover, table:hover, th:hover, td:hover, tr:hover, timline-content:hover{
     color: #ff5733;
     animation: shimmer 1.5s infinite ease-in-out; 
 }
