@@ -76,7 +76,6 @@ body {
 /* Header ********************/
 header {
     text-align: center;
-    background: linear-gradient(90deg, #A9BF04, #6E8C03, #A9BF04);
     background-size: 200% 100%;
     padding: 20px 0;
     border-radius: 100px;
