@@ -20,6 +20,22 @@
     <header>
         <h1>Alexis Sheehan</h1>
         <p>I start my days with coffee, hate being stuck in traffic, love to make maps, and <span class="shining-star">✨</span> always <span class="shining-star">✨</span> keep my email inbox at <i>zero.</i></p>
+        <div id="compass-container">
+            <img id="compass" src="compass-svgrepo-com.svg" alt="Compass">
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                  const compass = document.getElementById("compass");
+                  const anchors = document.querySelectorAll(".anchor-btn");
+                  const rotations = [90, 180, 270, 0]; // East, South, West, North
+            
+                  anchors.forEach((anchor, index) => {
+                      anchor.addEventListener("click", function () {
+                          compass.style.transform = `rotate(${rotations[index]}deg)`;
+                      });
+                  });
+              });
+            </script>
+        </div>
      </header>
 
     <div class="anchors">
