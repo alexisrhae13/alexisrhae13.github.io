@@ -101,7 +101,7 @@ main {
 }
 
 .timeline-circle {
-  background-color: #A9BF04; /* Chartreuse color */
+  background-color: #A9BF04;
   color: white;
   width: 40px;
   height: 40px;
@@ -123,7 +123,7 @@ main {
 }
 
 .timeline-content strong {
-  color: #A60311; /* Tomato red color */
+  color: #A60311; 
 }
 
 /* Vertical Line */
@@ -134,7 +134,7 @@ main {
   top: 0;
   bottom: 0;
   width: 2px;
-  background-color: #A9BF04; /* Chartreuse color */
+  background-color: #A9BF04; 
   margin-left: 30px;
 }
 
