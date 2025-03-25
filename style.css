@@ -27,11 +27,18 @@ body {
 /* Header ********************/
 header {
     text-align: center;
-    background-color: #A9BF04;
+    background: linear-gradient(90deg, #A9BF04, #6E8C03, #A9BF04);
+    background-size: 200% 100%;
     padding: 20px 0;
     border-radius: 200px;
     width: 100%;
     max-width: 1200px;
+    animation: shimmer 4s infinite linear;
+    transition: transform 0.3s ease-in-out;
+}
+
+header:hover {
+    animation: shimmer 4s infinite linear, shimmy 0.3s ease-in-out;
 }
 
 header h1 {
@@ -291,6 +298,13 @@ footer {
     100% {
         text-shadow: 2px 2px 5px rgba(255, 87, 51, 0.5), -2px -2px 5px rgba(255, 87, 51, 0.5);
     }
+}
+
+@keyframes shimmy {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-1px); }
 }
 
 h1, p, ul li , table, th, td, tr, timline-content{
