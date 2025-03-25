@@ -212,24 +212,45 @@
                 <li> 💻 <a href= "https://www.linkedin.com/in/alexis-sheehan-905723179/">linkedin</a></li>
             </ul>
         </section>
-        <iframe width="600" height="400" src="https://docs.google.com/spreadsheets/d/e/example_chart/pubchart?oid=12345&format=interactive"></iframe>
-        <canvas id="myChart"></canvas>
+            <canvas id="myChart"></canvas>
             <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
             <script>
               const ctx = document.getElementById('myChart').getContext('2d');
-              const myChart = new Chart(ctx, {
-                  type: 'bar',  // Try 'line' or 'pie' too!
-                  data: {
-                      labels: ['Data A', 'Data B', 'Data C'],
-                      datasets: [{
-                          label: 'Cool Data',
-                          data: [12, 19, 3],
-                          backgroundColor: ['red', 'blue', 'green']
-                      }]
+            
+              // Months of the year
+              const labels = ['January', 'February', 'March', 'April', 'May', 'June', 
+                              'July', 'August', 'September', 'October', 'November', 'December'];
+            
+              // Manually assigned random numbers (each month sums to 100)
+              const sleepData   = [30, 28, 32, 35, 30, 31, 29, 28, 30, 32, 33, 30];  
+              const workData    = [40, 42, 38, 35, 37, 36, 38, 39, 40, 38, 37, 39];  
+              const lakeData    = [5, 7, 6, 8, 7, 6, 7, 6, 5, 7, 8, 6];  
+              const gardenData  = [10, 8, 9, 7, 8, 10, 9, 10, 9, 8, 9, 10];  
+              const familyData  = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];  
+              const siteData    = [5, 5, 5, 5, 8, 7, 7, 7, 6, 5, 6, 5];  
+            
+              const datasets = [
+                { label: 'Sleep', data: sleepData, backgroundColor: 'rgba(75, 192, 192, 0.8)' },
+                { label: 'Work', data: workData, backgroundColor: 'rgba(255, 99, 132, 0.8)' },
+                { label: 'Lake', data: lakeData, backgroundColor: 'rgba(54, 162, 235, 0.8)' },
+                { label: 'Garden', data: gardenData, backgroundColor: 'rgba(255, 206, 86, 0.8)' },
+                { label: 'Family', data: familyData, backgroundColor: 'rgba(153, 102, 255, 0.8)' },
+                { label: 'Work on This Site', data: siteData, backgroundColor: 'rgba(255, 159, 64, 0.8)' }
+              ];
+            
+              new Chart(ctx, {
+                type: 'bar',
+                data: { labels, datasets },
+                options: {
+                  responsive: true,
+                  plugins: { legend: { position: 'top' } },
+                  scales: {
+                    x: { stacked: true },
+                    y: { stacked: true, beginAtZero: true, max: 100 }
                   }
+                }
               });
             </script>
-        <script src="https://d3js.org/d3.v7.min.js"></script>
     </main>
 
     <footer>
