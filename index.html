@@ -29,7 +29,7 @@
     <div class="anchors">
         <a href="#about" class="anchor-btn">About Me</a>
         <a href="#gis" class="anchor-btn">GIS</a>
-        <a href="experience" class="anchor-btn">Past Gigs</a>
+        <a href="pastgig" class="anchor-btn">Past Gigs</a>
         <a href="#contact" class="anchor-btn">Contact</a>
     </div>
     <div class="compass">
@@ -57,54 +57,54 @@
             <p>I am a Geospatial Data Wrangler and Visualizer.</p>
             <p>I have a passion for showing comprehensive concepts in simplistic forms.</p>
             <button class="bouncybutton">View my Map Gallery</button>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <div id="map"></div>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script>
-        // Initialize map centered on Kentucky
-        var map = L.map('map').setView([37.8, -85.0], 8);
-        // Add OpenStreetMap basemap
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
-        // Define custom emoji icons
-var homeIcon = L.divIcon({
-    className: 'emoji-icon',
-    html: '🏠', 
-    iconSize: [30, 30], 
-    iconAnchor: [15, 15] 
-});
-
-var workIcon = L.divIcon({
-    className: 'emoji-icon',
-    html: '💼', 
-    iconSize: [30, 30],
-    iconAnchor: [15, 15]
-});
-
-var heartIcon = L.divIcon({
-    className: 'emoji-icon',
-    html: '❤️', 
-    iconSize: [30, 30],
-    iconAnchor: [15, 15]
-});
-
-var shoppingIcon = L.divIcon({
-    className: 'emoji-icon',
-    html: '🛍️', 
-    iconSize: [30, 30],
-    iconAnchor: [15, 15]
-});
-        // poi
-        L.marker([37.6456, -84.7722], { icon: homeIcon }).addTo(map); // Home - Danville
-        L.marker([38.2009, -84.8733], { icon: workIcon }).addTo(map); // Work - Frankfort
-        L.marker([38.2527, -85.7585], { icon: heartIcon }).addTo(map); // Heart - Louisville
-        L.marker([37.7629, -84.8452], { icon: heartIcon }).addTo(map); // Heart - Harrodsburg
-        L.marker([38.0406, -84.5037], { icon: shopIcon }).addTo(map); // Shopping - Lexington
-    </script>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+            <div id="map" style="margin: 0 auto;"></div>
+            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+            <script>
+                // Initialize map centered on Kentucky
+                var map = L.map('map').setView([37.8, -85.0], 8);
+                // Add OpenStreetMap basemap
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; OpenStreetMap contributors'
+                }).addTo(map);
+                // Define custom emoji icons
+                var homeIcon = L.divIcon({
+                    className: 'emoji-icon',
+                    html: '🏠', 
+                    iconSize: [30, 30], 
+                    iconAnchor: [15, 15] 
+                });
+                
+                var workIcon = L.divIcon({
+                    className: 'emoji-icon',
+                    html: '💼', 
+                    iconSize: [30, 30],
+                    iconAnchor: [15, 15]
+                });
+                
+                var heartIcon = L.divIcon({
+                    className: 'emoji-icon',
+                    html: '❤️', 
+                    iconSize: [30, 30],
+                    iconAnchor: [15, 15]
+                });
+                
+                var shoppingIcon = L.divIcon({
+                    className: 'emoji-icon',
+                    html: '🛍️', 
+                    iconSize: [30, 30],
+                    iconAnchor: [15, 15]
+                });
+                // poi
+                L.marker([37.6456, -84.7722], { icon: homeIcon }).addTo(map); // Home - Danville
+                L.marker([38.2009, -84.8733], { icon: workIcon }).addTo(map); // Work - Frankfort
+                L.marker([38.2527, -85.7585], { icon: heartIcon }).addTo(map); // Heart - Louisville
+                L.marker([37.7629, -84.8452], { icon: heartIcon }).addTo(map); // Heart - Harrodsburg
+                L.marker([38.0406, -84.5037], { icon: shopIcon }).addTo(map); // Shopping - Lexington
+            </script>
         </section>
             
-        <section id="experience">
+        <section id="pastgig">
           <h2>Professional Experience</h2>
           <div class="timeline">
             <div class="timeline-item">
