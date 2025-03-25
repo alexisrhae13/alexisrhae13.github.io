@@ -79,7 +79,7 @@ header {
     background-size: 200% 100%;
     padding: 20px 0;
     border-radius: 100px;
-    width: 100%;
+    width: 40%;
     max-width: 1200px;
     animation: shimmer 4s infinite linear;
     transition: transform 0.3s ease-in-out;
