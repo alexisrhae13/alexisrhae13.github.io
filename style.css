@@ -10,8 +10,7 @@ body {
     text-transform: lowercase; 
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh; 
+    align-items: center; 
     flex-direction: column;
 }
 
@@ -134,19 +133,20 @@ a:hover {
     animation: bounce 1s;
   }
 
+
 .bouncybutton {
     padding: 1rem 3rem;
     margin-top: 2rem;
     border: none;
     color: #121111;
-    background: #181a4b;
+    background: #eb4034;
     cursor: pointer;
     border-radius: 200px;
     transition: all 150ms ease-in-out;
 }
 
 .bouncybutton:hover {
-    background-color: #3d3c61cf;
+    background-color: #91251d;
     color: #ffffff;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
